@@ -15,3 +15,5 @@ INNER JOIN owners ON vehicles.owner_id = owners.id
 GROUP BY owners.first_name, owners.last_name
 HAVING COUNT(vehicles.owner_id) > 1 AND AVG(vehicles.price) > 10000
 ORDER BY owners.first_name DESC;
+
+--Helpful link https://learnsql.com/blog/sql-avg-examples/--
